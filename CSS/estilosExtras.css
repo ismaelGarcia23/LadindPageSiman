@@ -1,0 +1,177 @@
+/*Este es codigo solo para el archivo departamentos.html*/
+/*El Css de los bookCard*/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  /* Grid de tarjetas */
+  .grid-departamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    font-weight: bold;
+    color: #9d2c2c;
+    border: 2px solid transparent;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #9d2c2c;
+    color: white;
+    border-color: #9d2c2c;
+  }
+  
+  /*  MEDIA QUERIES RESPONSIVOS */
+  
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    .card {
+      padding: 20px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Teléfonos grandes y tabletas pequeñas (481px - 768px) */
+  @media (max-width: 768px) {
+    .contenedor {
+      padding: 0 15px;
+    }
+  
+    .grid-departamentos {
+      gap: 15px;
+    }
+  
+    .card {
+      padding: 25px 18px;
+      font-size: 15px;
+    }
+  }
+  
+  /* Pantallas medianas (769px - 1024px) */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .card {
+      padding: 28px 20px;
+    }
+  }
+
+  /*Estilos del archivo Celulares de los bookcards*/
+  .bookcard {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .bookcard img {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contenido h2 {
+    margin: 0 0 10px;
+  }
+  
+  .precios {
+    margin-bottom: 10px;
+  }
+  
+  .precio-oferta {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+    margin-right: 10px;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 16px;
+  }
+  
+  .caracteristicas {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .caracteristicas li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .btn-carrito {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start;
+    transition: background 0.3s;
+  }
+  
+  .btn-carrito:hover {
+    background-color: #444;
+  }
+  @media (max-width: 600px) {
+    .bookcard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contenido {
+      align-items: center;
+    }
+  
+    .btn-carrito {
+      align-self: center;
+    }
+  }
+    
+
+
